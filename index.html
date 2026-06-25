@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Prep</title>
+  <link rel="stylesheet" href="app/css/styles.css">
+</head>
+<body>
+  <nav>
+    <span class="brand">Screen Prep</span>
+    <a href="#/dashboard">Dashboard</a>
+    <a href="#/py">Python</a>
+    <a href="#/sql">SQL</a>
+    <a href="#/mcq">MCQ</a>
+    <a href="#/mock">Mock</a>
+    <a href="#/cram">Cram</a>
+    <a href="#/cheat">Cheatsheet</a>
+  </nav>
+  <div id="main"></div>
+  <div id="status-bar">
+    <div class="dot" id="py-dot"></div>
+    <span id="py-status">Python engine loading...</span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sql.js@1.12.0/dist/sql-wasm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.52.2/min/vs/loader.js"></script>
+  <script type="module" src="app/js/app.js"></script>
+</body>
+</html>

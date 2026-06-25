@@ -1,0 +1,1931 @@
+[
+  {
+    "id": "m1",
+    "topic": "Python",
+    "subtopic": "operators",
+    "difficulty": "easy",
+    "question": "Output of print(2 ** 3)?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "5"
+    ],
+    "answer_index": 1,
+    "explanation": "** is exponentiation.",
+    "source": "gyansetu.in Python MCQ"
+  },
+  {
+    "id": "m2",
+    "topic": "Python",
+    "subtopic": "operators",
+    "difficulty": "easy",
+    "question": "Result of 5 // 2?",
+    "options": [
+      "2.5",
+      "2",
+      "3",
+      "2.0"
+    ],
+    "answer_index": 1,
+    "explanation": "// floor division returns int here.",
+    "source": "gyansetu.in"
+  },
+  {
+    "id": "m3",
+    "topic": "Python",
+    "subtopic": "data types",
+    "difficulty": "easy",
+    "question": "Which is immutable?",
+    "options": [
+      "list",
+      "dict",
+      "set",
+      "tuple"
+    ],
+    "answer_index": 3,
+    "explanation": "tuples are immutable.",
+    "source": "gyansetu.in"
+  },
+  {
+    "id": "m4",
+    "topic": "Python",
+    "subtopic": "truthiness",
+    "difficulty": "easy",
+    "question": "bool(\"False\") returns?",
+    "options": [
+      "False",
+      "True",
+      "error",
+      "None"
+    ],
+    "answer_index": 1,
+    "explanation": "any non-empty string is truthy.",
+    "source": "gyansetu.in"
+  },
+  {
+    "id": "m5",
+    "topic": "Python",
+    "subtopic": "mutable defaults",
+    "difficulty": "medium",
+    "question": "Mutable default argument: def f(x, a=[]): a.append(x); return a — calling f(1) then f(2) prints?",
+    "options": [
+      "[1] then [2]",
+      "[1] then [1,2]",
+      "error",
+      "[2]"
+    ],
+    "answer_index": 1,
+    "explanation": "default list is created once and shared.",
+    "source": "GeeksforGeeks \"mutable default value\""
+  },
+  {
+    "id": "m6",
+    "topic": "Python",
+    "subtopic": "identity vs equality",
+    "difficulty": "easy",
+    "question": "is vs ==: which compares identity (same object)?",
+    "options": [
+      "==",
+      "is",
+      "both",
+      "neither"
+    ],
+    "answer_index": 1,
+    "explanation": "is tests identity, == tests equality.",
+    "source": "standard"
+  },
+  {
+    "id": "m7",
+    "topic": "Python",
+    "subtopic": "integer caching",
+    "difficulty": "medium",
+    "question": "Integer caching: a=256; b=256; a is b?",
+    "options": [
+      "True",
+      "False",
+      "error"
+    ],
+    "answer_index": 0,
+    "explanation": "CPython caches small ints. (Per CPython's longobject.c: integers between −5 and 256 are preallocated and reused, controlled by macros NSMALLNEGINTS=5 and NSMALLPOSINTS=257; so 257 is 257 is typically False. CPython-only — not PyPy/Jython.)",
+    "source": "gyansetu.in"
+  },
+  {
+    "id": "m8",
+    "topic": "Python",
+    "subtopic": "type introspection",
+    "difficulty": "easy",
+    "question": "type([]) returns?",
+    "options": [
+      "<class 'list'>",
+      "<class 'array'>",
+      "list()",
+      "error"
+    ],
+    "answer_index": 0,
+    "explanation": "type([]) is the list class.",
+    "source": "gyansetu.in"
+  },
+  {
+    "id": "m9",
+    "topic": "Python",
+    "subtopic": "sets",
+    "difficulty": "easy",
+    "question": "Output set([1,2,2,3])?",
+    "options": [
+      "{1,2,3}",
+      "{1,2,2,3}",
+      "[1,2,3]",
+      "error"
+    ],
+    "answer_index": 0,
+    "explanation": "sets drop duplicates.",
+    "source": "gyansetu.in"
+  },
+  {
+    "id": "m10",
+    "topic": "Python",
+    "subtopic": "lambda",
+    "difficulty": "easy",
+    "question": "Purpose of lambda?",
+    "options": [
+      "anonymous function",
+      "loop var",
+      "import module",
+      "handle exceptions"
+    ],
+    "answer_index": 0,
+    "explanation": "lambda defines an anonymous function.",
+    "source": "igmguru Python MCQ"
+  },
+  {
+    "id": "m11",
+    "topic": "Python",
+    "subtopic": "strings",
+    "difficulty": "easy",
+    "question": "len(\"Python\")?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "error"
+    ],
+    "answer_index": 1,
+    "explanation": "\"Python\" has 6 characters.",
+    "source": "gyansetu.in"
+  },
+  {
+    "id": "m12",
+    "topic": "Python",
+    "subtopic": "args/kwargs",
+    "difficulty": "easy",
+    "question": "What does *args collect?",
+    "options": [
+      "keyword args",
+      "positional args as tuple",
+      "a dict",
+      "nothing"
+    ],
+    "answer_index": 1,
+    "explanation": "**kwargs collects keyword args as dict.",
+    "source": "GeeksforGeeks"
+  },
+  {
+    "id": "m13",
+    "topic": "Python",
+    "subtopic": "copy semantics",
+    "difficulty": "medium",
+    "question": "Shallow vs deep copy: after b=a.copy() on a nested list, modifying b[0][0] changes a?",
+    "options": [
+      "yes",
+      "no"
+    ],
+    "answer_index": 0,
+    "explanation": "shallow copy shares nested objects; use copy.deepcopy.",
+    "source": "standard"
+  },
+  {
+    "id": "m14",
+    "topic": "Python",
+    "subtopic": "list comprehension",
+    "difficulty": "easy",
+    "question": "List comprehension [x*2 for x in range(3)]?",
+    "options": [
+      "[0,2,4]",
+      "[2,4,6]",
+      "[0,1,2]",
+      "error"
+    ],
+    "answer_index": 0,
+    "explanation": "range(3) is 0,1,2 doubled to 0,2,4.",
+    "source": "standard"
+  },
+  {
+    "id": "m15",
+    "topic": "Python",
+    "subtopic": "generators",
+    "difficulty": "medium",
+    "question": "Generator vs list: a generator expression (x for x in r) is?",
+    "options": [
+      "lazy/iterator",
+      "fully materialized list",
+      "tuple",
+      "set"
+    ],
+    "answer_index": 0,
+    "explanation": "lazy evaluation, memory-efficient.",
+    "source": "standard"
+  },
+  {
+    "id": "m16",
+    "topic": "Python",
+    "subtopic": "membership complexity",
+    "difficulty": "medium",
+    "question": "Time complexity of x in my_list vs x in my_set?",
+    "options": [
+      "both O(1)",
+      "list O(n), set O(1) avg",
+      "both O(n)",
+      "list O(1)"
+    ],
+    "answer_index": 1,
+    "explanation": "list membership is O(n), set membership is O(1) average.",
+    "source": "igmguru DSA"
+  },
+  {
+    "id": "m17",
+    "topic": "Python",
+    "subtopic": "list ops complexity",
+    "difficulty": "medium",
+    "question": "List append vs insert(0,x) complexity?",
+    "options": [
+      "both O(1)",
+      "append O(1) amortized, insert(0) O(n)",
+      "both O(n)"
+    ],
+    "answer_index": 1,
+    "explanation": "append is O(1) amortized while insert(0) shifts all elements O(n).",
+    "source": "standard"
+  },
+  {
+    "id": "m18",
+    "topic": "Python",
+    "subtopic": "exceptions",
+    "difficulty": "easy",
+    "question": "Which keyword handles exceptions?",
+    "options": [
+      "catch",
+      "except",
+      "rescue",
+      "handle"
+    ],
+    "answer_index": 1,
+    "explanation": "except handles exceptions in Python.",
+    "source": "gyansetu.in"
+  },
+  {
+    "id": "m19",
+    "topic": "Python",
+    "subtopic": "exceptions",
+    "difficulty": "easy",
+    "question": "finally block?",
+    "options": [
+      "runs only on error",
+      "always runs",
+      "never runs",
+      "optional return"
+    ],
+    "answer_index": 1,
+    "explanation": "finally always runs.",
+    "source": "gyansetu.in"
+  },
+  {
+    "id": "m20",
+    "topic": "Python",
+    "subtopic": "exceptions",
+    "difficulty": "easy",
+    "question": "Exception for divide-by-zero?",
+    "options": [
+      "ValueError",
+      "ZeroDivisionError",
+      "ArithmeticError only",
+      "TypeError"
+    ],
+    "answer_index": 1,
+    "explanation": "divide-by-zero raises ZeroDivisionError.",
+    "source": "gyansetu.in"
+  },
+  {
+    "id": "m21",
+    "topic": "Python",
+    "subtopic": "string immutability",
+    "difficulty": "easy",
+    "question": "String immutability: s=\"abc\"; s[0]='x' →?",
+    "options": [
+      "\"xbc\"",
+      "TypeError",
+      "None",
+      "\"abc\""
+    ],
+    "answer_index": 1,
+    "explanation": "strings are immutable.",
+    "source": "standard"
+  },
+  {
+    "id": "m22",
+    "topic": "Python",
+    "subtopic": "scope",
+    "difficulty": "easy",
+    "question": "LEGB scope order?",
+    "options": [
+      "Local, Enclosing, Global, Built-in",
+      "Global first",
+      "Built-in first",
+      "random"
+    ],
+    "answer_index": 0,
+    "explanation": "Python resolves names Local, Enclosing, Global, Built-in.",
+    "source": "standard"
+  },
+  {
+    "id": "m23",
+    "topic": "Python",
+    "subtopic": "slicing",
+    "difficulty": "easy",
+    "question": "Slicing \"abcde\"[1:4]?",
+    "options": [
+      "\"abc\"",
+      "\"bcd\"",
+      "\"bcde\"",
+      "\"abcd\""
+    ],
+    "answer_index": 1,
+    "explanation": "end-exclusive.",
+    "source": "standard"
+  },
+  {
+    "id": "m24",
+    "topic": "Python",
+    "subtopic": "list repetition",
+    "difficulty": "easy",
+    "question": "[1,2,3]*2?",
+    "options": [
+      "[2,4,6]",
+      "[1,2,3,1,2,3]",
+      "error",
+      "[1,2,3,2]"
+    ],
+    "answer_index": 1,
+    "explanation": "list repetition.",
+    "source": "igmguru"
+  },
+  {
+    "id": "m25",
+    "topic": "DSA",
+    "subtopic": "sorting complexity",
+    "difficulty": "medium",
+    "question": "Worst-case time of QuickSort?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "answer_index": 1,
+    "explanation": "on already-sorted with bad pivot.",
+    "source": "letsfindcourse DSA MCQ"
+  },
+  {
+    "id": "m26",
+    "topic": "DSA",
+    "subtopic": "sorting complexity",
+    "difficulty": "medium",
+    "question": "Which sort guarantees O(n log n) worst case?",
+    "options": [
+      "Quick",
+      "Bubble",
+      "Merge",
+      "Insertion"
+    ],
+    "answer_index": 2,
+    "explanation": "Merge sort guarantees O(n log n) worst case.",
+    "source": "interviewbit DAA MCQ"
+  },
+  {
+    "id": "m27",
+    "topic": "DSA",
+    "subtopic": "sort stability",
+    "difficulty": "medium",
+    "question": "Which is NOT a stable sort?",
+    "options": [
+      "Insertion",
+      "Selection",
+      "Bubble",
+      "Merge"
+    ],
+    "answer_index": 1,
+    "explanation": "selection sort is unstable.",
+    "source": "letsfindcourse"
+  },
+  {
+    "id": "m28",
+    "topic": "DSA",
+    "subtopic": "in-place sorting",
+    "difficulty": "medium",
+    "question": "Which is NOT in-place?",
+    "options": [
+      "Selection",
+      "Heap",
+      "Quick",
+      "Merge"
+    ],
+    "answer_index": 3,
+    "explanation": "merge sort needs O(n) extra.",
+    "source": "letsfindcourse"
+  },
+  {
+    "id": "m29",
+    "topic": "DSA",
+    "subtopic": "array access",
+    "difficulty": "easy",
+    "question": "Array access by index complexity?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "answer_index": 0,
+    "explanation": "array index access is O(1).",
+    "source": "igmguru DSA"
+  },
+  {
+    "id": "m30",
+    "topic": "DSA",
+    "subtopic": "stacks/queues",
+    "difficulty": "easy",
+    "question": "Stack is?",
+    "options": [
+      "FIFO",
+      "LIFO",
+      "random",
+      "sorted"
+    ],
+    "answer_index": 1,
+    "explanation": "queue is FIFO.",
+    "source": "mcqss DSA"
+  },
+  {
+    "id": "m31",
+    "topic": "DSA",
+    "subtopic": "BST lookup",
+    "difficulty": "medium",
+    "question": "Best worst-case lookup for balanced BST?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answer_index": 1,
+    "explanation": "balanced BST lookup is O(log n).",
+    "source": "interviewbit"
+  },
+  {
+    "id": "m32",
+    "topic": "DSA",
+    "subtopic": "hash table lookup",
+    "difficulty": "easy",
+    "question": "Hash table average lookup?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)"
+    ],
+    "answer_index": 0,
+    "explanation": "with good hash/low load.",
+    "source": "testbook"
+  },
+  {
+    "id": "m33",
+    "topic": "DSA",
+    "subtopic": "hash collisions",
+    "difficulty": "medium",
+    "question": "What is a hash collision?",
+    "options": [
+      "two keys, same hash/slot",
+      "duplicate value",
+      "empty bucket",
+      "overflow"
+    ],
+    "answer_index": 0,
+    "explanation": "resolved by chaining or open addressing.",
+    "source": "mcqss"
+  },
+  {
+    "id": "m34",
+    "topic": "DSA",
+    "subtopic": "binary search",
+    "difficulty": "easy",
+    "question": "Binary search requires the array to be?",
+    "options": [
+      "sorted",
+      "unsorted",
+      "unique",
+      "small"
+    ],
+    "answer_index": 0,
+    "explanation": "binary search requires a sorted array.",
+    "source": "siteforinfotech"
+  },
+  {
+    "id": "m35",
+    "topic": "DSA",
+    "subtopic": "graph traversal",
+    "difficulty": "easy",
+    "question": "Data structure for BFS?",
+    "options": [
+      "stack",
+      "queue",
+      "heap",
+      "tree"
+    ],
+    "answer_index": 1,
+    "explanation": "BFS uses a queue.",
+    "source": "testbook"
+  },
+  {
+    "id": "m36",
+    "topic": "DSA",
+    "subtopic": "recursion",
+    "difficulty": "easy",
+    "question": "Recursion uses which structure internally?",
+    "options": [
+      "queue",
+      "call stack",
+      "heap",
+      "array"
+    ],
+    "answer_index": 1,
+    "explanation": "recursion uses the call stack.",
+    "source": "interviewbit"
+  },
+  {
+    "id": "m37",
+    "topic": "DSA",
+    "subtopic": "space complexity",
+    "difficulty": "easy",
+    "question": "Space complexity = ?",
+    "options": [
+      "time to run",
+      "extra memory used",
+      "#operations",
+      "input size"
+    ],
+    "answer_index": 1,
+    "explanation": "space complexity is the extra memory used.",
+    "source": "igmguru"
+  },
+  {
+    "id": "m38",
+    "topic": "DSA",
+    "subtopic": "asymptotic growth",
+    "difficulty": "medium",
+    "question": "Which grows fastest as n→∞?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(2ⁿ)",
+      "O(n)"
+    ],
+    "answer_index": 2,
+    "explanation": "exponential.",
+    "source": "interviewbit"
+  },
+  {
+    "id": "m39",
+    "topic": "DSA",
+    "subtopic": "algorithm paradigms",
+    "difficulty": "easy",
+    "question": "Merge sort paradigm?",
+    "options": [
+      "greedy",
+      "divide & conquer",
+      "DP",
+      "backtracking"
+    ],
+    "answer_index": 1,
+    "explanation": "merge sort is divide and conquer.",
+    "source": "testbook"
+  },
+  {
+    "id": "m40",
+    "topic": "DSA",
+    "subtopic": "stacks",
+    "difficulty": "easy",
+    "question": "Best for LIFO undo functionality?",
+    "options": [
+      "stack",
+      "queue",
+      "hash",
+      "trie"
+    ],
+    "answer_index": 0,
+    "explanation": "a stack provides LIFO undo.",
+    "source": "igmguru"
+  },
+  {
+    "id": "m41",
+    "topic": "SQL",
+    "subtopic": "WHERE vs HAVING",
+    "difficulty": "medium",
+    "question": "WHERE vs HAVING?",
+    "options": [
+      "same",
+      "WHERE before aggregation, HAVING after",
+      "HAVING before",
+      "WHERE only joins"
+    ],
+    "answer_index": 1,
+    "explanation": "WHERE filters before aggregation, HAVING after.",
+    "source": "scholarhat DBMS MCQ"
+  },
+  {
+    "id": "m42",
+    "topic": "SQL",
+    "subtopic": "joins",
+    "difficulty": "easy",
+    "question": "INNER JOIN returns?",
+    "options": [
+      "all left",
+      "all right",
+      "only matching rows in both",
+      "all rows"
+    ],
+    "answer_index": 2,
+    "explanation": "INNER JOIN returns only matching rows in both tables.",
+    "source": "igmguru SQL"
+  },
+  {
+    "id": "m43",
+    "topic": "SQL",
+    "subtopic": "joins",
+    "difficulty": "medium",
+    "question": "Which JOIN returns all rows from both tables?",
+    "options": [
+      "INNER",
+      "LEFT",
+      "RIGHT",
+      "FULL OUTER"
+    ],
+    "answer_index": 3,
+    "explanation": "FULL OUTER JOIN returns all rows from both tables.",
+    "source": "scholarhat"
+  },
+  {
+    "id": "m44",
+    "topic": "SQL",
+    "subtopic": "DELETE vs TRUNCATE",
+    "difficulty": "medium",
+    "question": "DELETE vs TRUNCATE?",
+    "options": [
+      "identical",
+      "DELETE row-by-row & rollback-able, TRUNCATE all rows, faster, DDL, usually not rollback-able",
+      "TRUNCATE keeps logs",
+      "DELETE drops table"
+    ],
+    "answer_index": 1,
+    "explanation": "DELETE is row-by-row and rollback-able; TRUNCATE removes all rows, is faster, DDL, usually not rollback-able.",
+    "source": "tpointtech SQL MCQ"
+  },
+  {
+    "id": "m45",
+    "topic": "SQL",
+    "subtopic": "DDL/DML",
+    "difficulty": "easy",
+    "question": "TRUNCATE is which type?",
+    "options": [
+      "DML",
+      "DDL",
+      "DCL",
+      "TCL"
+    ],
+    "answer_index": 1,
+    "explanation": "TRUNCATE is DDL.",
+    "source": "tpointtech"
+  },
+  {
+    "id": "m46",
+    "topic": "SQL",
+    "subtopic": "UNION",
+    "difficulty": "medium",
+    "question": "UNION vs UNION ALL?",
+    "options": [
+      "same",
+      "UNION dedups, UNION ALL keeps duplicates",
+      "UNION ALL dedups",
+      "UNION sorts"
+    ],
+    "answer_index": 1,
+    "explanation": "UNION removes duplicates, UNION ALL keeps them.",
+    "source": "scholarhat"
+  },
+  {
+    "id": "m47",
+    "topic": "SQL",
+    "subtopic": "keys",
+    "difficulty": "medium",
+    "question": "Primary key vs unique key?",
+    "options": [
+      "same",
+      "one PK per table, not null; multiple unique keys, allow one null",
+      "PK allows null",
+      "unique not null"
+    ],
+    "answer_index": 1,
+    "explanation": "one PK per table and not null; multiple unique keys allowed and each may allow one null.",
+    "source": "medium/osama DB MCQ"
+  },
+  {
+    "id": "m48",
+    "topic": "SQL",
+    "subtopic": "foreign keys",
+    "difficulty": "easy",
+    "question": "Foreign key purpose?",
+    "options": [
+      "unique row id",
+      "link between tables / referential integrity",
+      "speed queries",
+      "sort"
+    ],
+    "answer_index": 1,
+    "explanation": "foreign keys link tables and enforce referential integrity.",
+    "source": "scholarhat"
+  },
+  {
+    "id": "m49",
+    "topic": "SQL",
+    "subtopic": "normalization",
+    "difficulty": "easy",
+    "question": "Normalization goal?",
+    "options": [
+      "increase redundancy",
+      "reduce redundancy & anomalies",
+      "slow queries",
+      "temp tables"
+    ],
+    "answer_index": 1,
+    "explanation": "normalization reduces redundancy and anomalies.",
+    "source": "scholarhat"
+  },
+  {
+    "id": "m50",
+    "topic": "SQL",
+    "subtopic": "normalization",
+    "difficulty": "medium",
+    "question": "1NF requires?",
+    "options": [
+      "atomic values, no repeating groups",
+      "no transitive deps",
+      "candidate keys",
+      "BCNF"
+    ],
+    "answer_index": 0,
+    "explanation": "1NF requires atomic values and no repeating groups.",
+    "source": "eitt.academy / GeeksforGeeks"
+  },
+  {
+    "id": "m51",
+    "topic": "SQL",
+    "subtopic": "normalization",
+    "difficulty": "medium",
+    "question": "3NF eliminates?",
+    "options": [
+      "partial deps",
+      "transitive dependencies",
+      "multivalued",
+      "joins"
+    ],
+    "answer_index": 1,
+    "explanation": "3NF eliminates transitive dependencies.",
+    "source": "sql-plsql blog"
+  },
+  {
+    "id": "m52",
+    "topic": "SQL",
+    "subtopic": "indexes",
+    "difficulty": "medium",
+    "question": "Clustered vs non-clustered index?",
+    "options": [
+      "same",
+      "clustered sorts/stores rows physically (one per table), non-clustered is a separate structure",
+      "non-clustered sorts data",
+      "clustered is logical only"
+    ],
+    "answer_index": 1,
+    "explanation": "clustered sorts/stores rows physically (one per table), non-clustered is a separate structure.",
+    "source": "henryharvin DBMS"
+  },
+  {
+    "id": "m53",
+    "topic": "SQL",
+    "subtopic": "indexes",
+    "difficulty": "easy",
+    "question": "Index main benefit?",
+    "options": [
+      "slows reads",
+      "speeds up SELECT/lookup at cost of write overhead",
+      "saves disk",
+      "enforces null"
+    ],
+    "answer_index": 1,
+    "explanation": "indexes speed up SELECT/lookup at the cost of write overhead.",
+    "source": "justacademy"
+  },
+  {
+    "id": "m54",
+    "topic": "SQL",
+    "subtopic": "ACID",
+    "difficulty": "easy",
+    "question": "ACID stands for?",
+    "options": [
+      "Atomicity, Consistency, Isolation, Durability",
+      "Association…",
+      "Access…",
+      "Aggregation…"
+    ],
+    "answer_index": 0,
+    "explanation": "ACID is Atomicity, Consistency, Isolation, Durability.",
+    "source": "medium/osama"
+  },
+  {
+    "id": "m55",
+    "topic": "SQL",
+    "subtopic": "NULL semantics",
+    "difficulty": "medium",
+    "question": "NULL = NULL evaluates to?",
+    "options": [
+      "TRUE",
+      "FALSE",
+      "NULL/unknown",
+      "error"
+    ],
+    "answer_index": 2,
+    "explanation": "use IS NULL.",
+    "source": "DataLemur NULL note"
+  },
+  {
+    "id": "m56",
+    "topic": "SQL",
+    "subtopic": "CTE",
+    "difficulty": "easy",
+    "question": "A CTE (WITH) is?",
+    "options": [
+      "permanent table",
+      "temporary named result set for one statement",
+      "index",
+      "trigger"
+    ],
+    "answer_index": 1,
+    "explanation": "a CTE is a temporary named result set for one statement.",
+    "source": "igmguru SQL"
+  },
+  {
+    "id": "m57",
+    "topic": "Statistics",
+    "subtopic": "p-value",
+    "difficulty": "medium",
+    "question": "The p-value represents?",
+    "options": [
+      "P(null is true)",
+      "probability of observing a result at least as extreme, given the null",
+      "effect size",
+      "sample mean"
+    ],
+    "answer_index": 1,
+    "explanation": "the p-value is the probability of observing a result at least as extreme, given the null.",
+    "source": "mymcqs Data Science"
+  },
+  {
+    "id": "m58",
+    "topic": "Statistics",
+    "subtopic": "hypothesis errors",
+    "difficulty": "medium",
+    "question": "Type I error is?",
+    "options": [
+      "false negative",
+      "false positive (reject true null)",
+      "low power",
+      "bias"
+    ],
+    "answer_index": 1,
+    "explanation": "Type II = false negative.",
+    "source": "Wikipedia precision/recall"
+  },
+  {
+    "id": "m59",
+    "topic": "Statistics",
+    "subtopic": "central tendency",
+    "difficulty": "easy",
+    "question": "Which is robust to outliers as a central tendency?",
+    "options": [
+      "mean",
+      "median",
+      "range",
+      "variance"
+    ],
+    "answer_index": 1,
+    "explanation": "the median is robust to outliers.",
+    "source": "standard"
+  },
+  {
+    "id": "m60",
+    "topic": "Statistics",
+    "subtopic": "dispersion",
+    "difficulty": "easy",
+    "question": "Std deviation is?",
+    "options": [
+      "mean of values",
+      "square root of variance",
+      "variance squared",
+      "mode"
+    ],
+    "answer_index": 1,
+    "explanation": "standard deviation is the square root of variance.",
+    "source": "standard"
+  },
+  {
+    "id": "m61",
+    "topic": "Statistics",
+    "subtopic": "CLT",
+    "difficulty": "medium",
+    "question": "Central Limit Theorem says?",
+    "options": [
+      "all data is normal",
+      "sample-mean distribution →normal as n grows",
+      "variance is zero",
+      "median=mean"
+    ],
+    "answer_index": 1,
+    "explanation": "the sample-mean distribution approaches normal as n grows.",
+    "source": "standard"
+  },
+  {
+    "id": "m62",
+    "topic": "Statistics",
+    "subtopic": "distributions",
+    "difficulty": "easy",
+    "question": "Which distribution is symmetric & bell-shaped?",
+    "options": [
+      "Poisson",
+      "Normal",
+      "Exponential",
+      "Geometric"
+    ],
+    "answer_index": 1,
+    "explanation": "the Normal distribution is symmetric and bell-shaped.",
+    "source": "mymcqs"
+  },
+  {
+    "id": "m63",
+    "topic": "Statistics",
+    "subtopic": "outlier detection",
+    "difficulty": "easy",
+    "question": "Outliers best detected with?",
+    "options": [
+      "boxplot",
+      "histogram",
+      "mean",
+      "mode"
+    ],
+    "answer_index": 0,
+    "explanation": "boxplots best surface outliers.",
+    "source": "mymcqs"
+  },
+  {
+    "id": "m64",
+    "topic": "Statistics",
+    "subtopic": "correlation vs causation",
+    "difficulty": "easy",
+    "question": "Correlation vs causation: high correlation implies causation?",
+    "options": [
+      "yes",
+      "no"
+    ],
+    "answer_index": 1,
+    "explanation": "correlation ≠ causation.",
+    "source": "standard"
+  },
+  {
+    "id": "m65",
+    "topic": "Statistics",
+    "subtopic": "confidence intervals",
+    "difficulty": "medium",
+    "question": "A 95% confidence interval means?",
+    "options": [
+      "95% of data lies inside",
+      "if repeated, ~95% of such intervals contain the true parameter",
+      "p=0.95 the param is inside",
+      "5% error in mean"
+    ],
+    "answer_index": 1,
+    "explanation": "if repeated, ~95% of such intervals contain the true parameter.",
+    "source": "standard"
+  },
+  {
+    "id": "m66",
+    "topic": "Statistics",
+    "subtopic": "conditional probability",
+    "difficulty": "medium",
+    "question": "Conditional probability P(A|B) = ?",
+    "options": [
+      "P(A)P(B)",
+      "P(A∩B)/P(B)",
+      "P(A)+P(B)",
+      "P(B|A)"
+    ],
+    "answer_index": 1,
+    "explanation": "Bayes building block.",
+    "source": "standard"
+  },
+  {
+    "id": "m67",
+    "topic": "ML",
+    "subtopic": "supervised learning",
+    "difficulty": "easy",
+    "question": "Supervised learning uses?",
+    "options": [
+      "unlabeled data",
+      "labeled data (input→known output)",
+      "rewards only",
+      "no data"
+    ],
+    "answer_index": 1,
+    "explanation": "k-means is unsupervised.",
+    "source": "GeeksforGeeks / medium 50 ML MCQs"
+  },
+  {
+    "id": "m68",
+    "topic": "ML",
+    "subtopic": "overfitting",
+    "difficulty": "easy",
+    "question": "Overfitting means?",
+    "options": [
+      "poor on train",
+      "good on train, poor on test",
+      "good on both",
+      "underpowered"
+    ],
+    "answer_index": 1,
+    "explanation": "overfitting is good on train, poor on test.",
+    "source": "medium 50 ML MCQs"
+  },
+  {
+    "id": "m69",
+    "topic": "ML",
+    "subtopic": "bias-variance",
+    "difficulty": "medium",
+    "question": "High variance indicates?",
+    "options": [
+      "underfitting",
+      "overfitting",
+      "low complexity",
+      "bias"
+    ],
+    "answer_index": 1,
+    "explanation": "high variance indicates overfitting.",
+    "source": "onlineexammaker overfitting quiz"
+  },
+  {
+    "id": "m70",
+    "topic": "ML",
+    "subtopic": "regularization",
+    "difficulty": "medium",
+    "question": "L1 (Lasso) regularization tends to?",
+    "options": [
+      "keep all weights small but nonzero",
+      "drive some coefficients to exactly zero (sparsity/feature selection)",
+      "increase variance",
+      "add features"
+    ],
+    "answer_index": 1,
+    "explanation": "L2 (Ridge) shrinks toward zero but not exactly.",
+    "source": "GeeksforGeeks regularization"
+  },
+  {
+    "id": "m71",
+    "topic": "ML",
+    "subtopic": "metrics/imbalance",
+    "difficulty": "medium",
+    "question": "Which metric best handles class imbalance?",
+    "options": [
+      "accuracy",
+      "F1-score",
+      "MAE",
+      "R²"
+    ],
+    "answer_index": 1,
+    "explanation": "F1 balances precision & recall.",
+    "source": "mymcqs"
+  },
+  {
+    "id": "m72",
+    "topic": "ML",
+    "subtopic": "precision/recall",
+    "difficulty": "medium",
+    "question": "Precision = ?",
+    "options": [
+      "TP/(TP+FP)",
+      "TP/(TP+FN)",
+      "TN/(TN+FP)",
+      "(TP+TN)/total"
+    ],
+    "answer_index": 0,
+    "explanation": "recall = TP/(TP+FN).",
+    "source": "Wikipedia precision/recall"
+  },
+  {
+    "id": "m73",
+    "topic": "ML",
+    "subtopic": "evaluation",
+    "difficulty": "easy",
+    "question": "Confusion matrix evaluates?",
+    "options": [
+      "regression",
+      "classification",
+      "clustering",
+      "distributions"
+    ],
+    "answer_index": 1,
+    "explanation": "a confusion matrix evaluates classification.",
+    "source": "mymcqs"
+  },
+  {
+    "id": "m74",
+    "topic": "ML",
+    "subtopic": "cross-validation",
+    "difficulty": "medium",
+    "question": "Cross-validation purpose?",
+    "options": [
+      "increase train size",
+      "assess generalization / detect overfitting across folds",
+      "tune nothing",
+      "remove features"
+    ],
+    "answer_index": 1,
+    "explanation": "cross-validation assesses generalization and detects overfitting across folds.",
+    "source": "onlineexammaker"
+  },
+  {
+    "id": "m75",
+    "topic": "ML",
+    "subtopic": "bias-variance",
+    "difficulty": "medium",
+    "question": "Bias-variance tradeoff balances?",
+    "options": [
+      "precision & recall",
+      "overfitting & underfitting",
+      "train & test size",
+      "L1 & L2"
+    ],
+    "answer_index": 1,
+    "explanation": "the bias-variance tradeoff balances overfitting and underfitting.",
+    "source": "medium 50 ML MCQs"
+  },
+  {
+    "id": "m76",
+    "topic": "CS",
+    "subtopic": "number bases",
+    "difficulty": "easy",
+    "question": "Binary 1010 in decimal?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "5"
+    ],
+    "answer_index": 1,
+    "explanation": "binary 1010 is decimal 10.",
+    "source": "standard"
+  },
+  {
+    "id": "m77",
+    "topic": "CS",
+    "subtopic": "number bases",
+    "difficulty": "easy",
+    "question": "Hex 0xF in decimal?",
+    "options": [
+      "15",
+      "16",
+      "10",
+      "255"
+    ],
+    "answer_index": 0,
+    "explanation": "hex 0xF is decimal 15.",
+    "source": "standard"
+  },
+  {
+    "id": "m78",
+    "topic": "CS",
+    "subtopic": "bitwise",
+    "difficulty": "easy",
+    "question": "5 & 3 (bitwise AND)?",
+    "options": [
+      "7",
+      "1",
+      "5",
+      "15"
+    ],
+    "answer_index": 1,
+    "explanation": "0101 & 0011 = 0001.",
+    "source": "standard"
+  },
+  {
+    "id": "m79",
+    "topic": "CS",
+    "subtopic": "bitwise",
+    "difficulty": "easy",
+    "question": "5 | 2 (bitwise OR)?",
+    "options": [
+      "7",
+      "5",
+      "2",
+      "0"
+    ],
+    "answer_index": 0,
+    "explanation": "0101 | 0010 = 0111.",
+    "source": "standard"
+  },
+  {
+    "id": "m80",
+    "topic": "CS",
+    "subtopic": "OOP",
+    "difficulty": "easy",
+    "question": "Encapsulation means?",
+    "options": [
+      "inheriting methods",
+      "bundling data+methods, hiding internal state",
+      "many forms",
+      "overloading"
+    ],
+    "answer_index": 1,
+    "explanation": "encapsulation bundles data and methods while hiding internal state.",
+    "source": "standard OOP"
+  },
+  {
+    "id": "m81",
+    "topic": "CS",
+    "subtopic": "OOP",
+    "difficulty": "easy",
+    "question": "Polymorphism means?",
+    "options": [
+      "single form",
+      "many forms — same interface, different implementations",
+      "data hiding",
+      "copying"
+    ],
+    "answer_index": 1,
+    "explanation": "polymorphism is many forms with the same interface and different implementations.",
+    "source": "standard OOP"
+  },
+  {
+    "id": "m82",
+    "topic": "CS",
+    "subtopic": "OOP",
+    "difficulty": "easy",
+    "question": "Inheritance enables?",
+    "options": [
+      "hiding",
+      "a class to acquire properties/methods of a parent",
+      "overloading operators",
+      "threading"
+    ],
+    "answer_index": 1,
+    "explanation": "inheritance lets a class acquire properties/methods of a parent.",
+    "source": "standard OOP"
+  },
+  {
+    "id": "m83",
+    "topic": "Statistics",
+    "subtopic": "central tendency",
+    "difficulty": "easy",
+    "question": "Which measure of central tendency is most affected by extreme values?",
+    "options": [
+      "mean",
+      "median",
+      "mode",
+      "range"
+    ],
+    "answer_index": 0,
+    "explanation": "the mean sums all values so a single extreme value shifts it significantly.",
+    "source": "standard"
+  },
+  {
+    "id": "m84",
+    "topic": "Statistics",
+    "subtopic": "central tendency",
+    "difficulty": "easy",
+    "question": "The mode of the dataset [2, 3, 3, 5, 7] is?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "answer_index": 0,
+    "explanation": "mode is the most frequently occurring value.",
+    "source": "standard"
+  },
+  {
+    "id": "m85",
+    "topic": "Statistics",
+    "subtopic": "dispersion",
+    "difficulty": "easy",
+    "question": "Variance is the average of the __ of deviations from the mean.",
+    "options": [
+      "cubes",
+      "absolute values",
+      "squares",
+      "reciprocals"
+    ],
+    "answer_index": 2,
+    "explanation": "variance averages squared deviations; std dev is the square root of that.",
+    "source": "standard"
+  },
+  {
+    "id": "m86",
+    "topic": "Statistics",
+    "subtopic": "distributions",
+    "difficulty": "easy",
+    "question": "A Poisson distribution models?",
+    "options": [
+      "continuous time between events",
+      "count of events in a fixed interval given a constant rate",
+      "proportions between 0 and 1",
+      "normally distributed sums"
+    ],
+    "answer_index": 1,
+    "explanation": "Poisson is used for counts of rare events in a fixed interval.",
+    "source": "standard"
+  },
+  {
+    "id": "m87",
+    "topic": "Statistics",
+    "subtopic": "distributions",
+    "difficulty": "easy",
+    "question": "A uniform distribution means?",
+    "options": [
+      "all outcomes equally likely",
+      "outcomes follow a bell curve",
+      "only integer values",
+      "skewed right"
+    ],
+    "answer_index": 0,
+    "explanation": "in a uniform distribution every outcome in the range has equal probability.",
+    "source": "standard"
+  },
+  {
+    "id": "m88",
+    "topic": "Statistics",
+    "subtopic": "hypothesis testing",
+    "difficulty": "easy",
+    "question": "The null hypothesis (H0) typically states?",
+    "options": [
+      "there is a significant effect",
+      "no effect or no difference exists",
+      "the alternative is true",
+      "p < 0.05"
+    ],
+    "answer_index": 1,
+    "explanation": "the null hypothesis assumes no effect; we test evidence against it.",
+    "source": "standard"
+  },
+  {
+    "id": "m89",
+    "topic": "Statistics",
+    "subtopic": "hypothesis testing",
+    "difficulty": "medium",
+    "question": "If p-value < alpha (0.05), you?",
+    "options": [
+      "accept the null hypothesis",
+      "reject the null hypothesis",
+      "increase sample size",
+      "accept the alternative for certain"
+    ],
+    "answer_index": 1,
+    "explanation": "a p-value below alpha means the result is statistically significant and the null is rejected.",
+    "source": "standard"
+  },
+  {
+    "id": "m90",
+    "topic": "Statistics",
+    "subtopic": "outlier detection",
+    "difficulty": "medium",
+    "question": "Using IQR, outliers are typically defined as values beyond?",
+    "options": [
+      "mean ± 1 std dev",
+      "Q1 − 1.5*IQR or Q3 + 1.5*IQR",
+      "the 1st and 99th percentiles",
+      "min and max"
+    ],
+    "answer_index": 1,
+    "explanation": "the IQR fence rule flags values below Q1-1.5*IQR or above Q3+1.5*IQR as outliers.",
+    "source": "standard"
+  },
+  {
+    "id": "m91",
+    "topic": "Statistics",
+    "subtopic": "Bayesian",
+    "difficulty": "medium",
+    "question": "Bayes' theorem states P(A|B) = ?",
+    "options": [
+      "P(B|A) * P(A) / P(B)",
+      "P(A) + P(B) - P(A∩B)",
+      "P(A) / P(B|A)",
+      "P(B) * P(A∩B)"
+    ],
+    "answer_index": 0,
+    "explanation": "Bayes' theorem: P(A|B) = P(B|A)*P(A)/P(B).",
+    "source": "standard"
+  },
+  {
+    "id": "m92",
+    "topic": "Statistics",
+    "subtopic": "Bayesian",
+    "difficulty": "easy",
+    "question": "In Bayesian inference, the prior represents?",
+    "options": [
+      "belief about a parameter before seeing data",
+      "the likelihood of the data",
+      "the final probability estimate",
+      "sample mean"
+    ],
+    "answer_index": 0,
+    "explanation": "the prior encodes initial belief; the posterior updates it with observed data.",
+    "source": "standard"
+  },
+  {
+    "id": "m93",
+    "topic": "Statistics",
+    "subtopic": "Bayesian",
+    "difficulty": "easy",
+    "question": "The posterior in Bayesian updating is proportional to?",
+    "options": [
+      "prior only",
+      "likelihood only",
+      "prior times likelihood",
+      "prior divided by likelihood"
+    ],
+    "answer_index": 2,
+    "explanation": "posterior ∝ prior * likelihood (Bayes' theorem).",
+    "source": "standard"
+  },
+  {
+    "id": "m94",
+    "topic": "Statistics",
+    "subtopic": "A/B testing",
+    "difficulty": "easy",
+    "question": "In an A/B test, the control group receives?",
+    "options": [
+      "the new treatment",
+      "the existing/original version",
+      "a random selection of both",
+      "no treatment and no data"
+    ],
+    "answer_index": 1,
+    "explanation": "the control group keeps the status quo; the treatment group gets the change.",
+    "source": "standard"
+  },
+  {
+    "id": "m95",
+    "topic": "Statistics",
+    "subtopic": "A/B testing",
+    "difficulty": "medium",
+    "question": "Type II error in hypothesis testing means?",
+    "options": [
+      "rejecting a true null (false positive)",
+      "failing to reject a false null (false negative)",
+      "sample size is too large",
+      "alpha is too small"
+    ],
+    "answer_index": 1,
+    "explanation": "Type II (beta) is a false negative: missing a real effect.",
+    "source": "standard"
+  },
+  {
+    "id": "m96",
+    "topic": "Statistics",
+    "subtopic": "A/B testing",
+    "difficulty": "medium",
+    "question": "Statistical power is the probability of?",
+    "options": [
+      "making a Type I error",
+      "correctly rejecting a false null (detecting a real effect)",
+      "the null being true",
+      "the p-value being exactly 0.05"
+    ],
+    "answer_index": 1,
+    "explanation": "power = 1 - beta; higher power means less chance of missing a real effect.",
+    "source": "standard"
+  },
+  {
+    "id": "m97",
+    "topic": "Statistics",
+    "subtopic": "A/B testing",
+    "difficulty": "medium",
+    "question": "To detect a smaller effect size in an A/B test, you generally need?",
+    "options": [
+      "a smaller sample",
+      "a larger sample",
+      "a higher alpha",
+      "fewer metrics"
+    ],
+    "answer_index": 1,
+    "explanation": "smaller effects need more data to distinguish from noise.",
+    "source": "DataCamp"
+  },
+  {
+    "id": "m98",
+    "topic": "ML",
+    "subtopic": "supervised vs unsupervised",
+    "difficulty": "easy",
+    "question": "K-means clustering is an example of?",
+    "options": [
+      "supervised learning",
+      "unsupervised learning",
+      "reinforcement learning",
+      "semi-supervised learning"
+    ],
+    "answer_index": 1,
+    "explanation": "k-means groups unlabeled data into k clusters with no target labels.",
+    "source": "GeeksforGeeks"
+  },
+  {
+    "id": "m99",
+    "topic": "ML",
+    "subtopic": "train/validation/test",
+    "difficulty": "easy",
+    "question": "The test set is used to?",
+    "options": [
+      "train the model",
+      "tune hyperparameters",
+      "give a final unbiased performance estimate",
+      "cross-validate folds"
+    ],
+    "answer_index": 2,
+    "explanation": "the test set is held out until the very end to estimate real-world performance.",
+    "source": "standard"
+  },
+  {
+    "id": "m100",
+    "topic": "ML",
+    "subtopic": "algorithms",
+    "difficulty": "easy",
+    "question": "Logistic regression outputs?",
+    "options": [
+      "a continuous numeric value",
+      "a probability between 0 and 1",
+      "cluster assignments",
+      "a decision tree"
+    ],
+    "answer_index": 1,
+    "explanation": "logistic regression uses a sigmoid function to output a probability for classification.",
+    "source": "GeeksforGeeks"
+  },
+  {
+    "id": "m101",
+    "topic": "ML",
+    "subtopic": "algorithms",
+    "difficulty": "easy",
+    "question": "A decision tree splits data based on?",
+    "options": [
+      "random weights",
+      "feature thresholds that reduce impurity",
+      "distance to centroid",
+      "gradient steps"
+    ],
+    "answer_index": 1,
+    "explanation": "decision trees greedily pick feature splits that best separate classes or reduce variance.",
+    "source": "GeeksforGeeks"
+  },
+  {
+    "id": "m102",
+    "topic": "ML",
+    "subtopic": "algorithms",
+    "difficulty": "easy",
+    "question": "k-Nearest Neighbors (kNN) classifies by?",
+    "options": [
+      "fitting a linear boundary",
+      "majority vote among the k closest training points",
+      "building a tree",
+      "gradient descent"
+    ],
+    "answer_index": 1,
+    "explanation": "kNN is a non-parametric method that uses proximity to labeled points.",
+    "source": "standard"
+  },
+  {
+    "id": "m103",
+    "topic": "ML",
+    "subtopic": "algorithms",
+    "difficulty": "medium",
+    "question": "Random forest reduces overfitting compared to a single decision tree mainly by?",
+    "options": [
+      "using a deeper tree",
+      "averaging predictions across many trees trained on bootstrap samples",
+      "using gradient descent",
+      "removing all features"
+    ],
+    "answer_index": 1,
+    "explanation": "bagging + random feature selection reduces variance without much bias cost.",
+    "source": "GeeksforGeeks"
+  },
+  {
+    "id": "m104",
+    "topic": "ML",
+    "subtopic": "gradient descent",
+    "difficulty": "easy",
+    "question": "Gradient descent minimizes a cost function by?",
+    "options": [
+      "randomly sampling points",
+      "moving parameters in the direction opposite to the gradient",
+      "increasing the learning rate",
+      "removing features with high weight"
+    ],
+    "answer_index": 1,
+    "explanation": "gradient descent updates weights by subtracting the gradient times the learning rate.",
+    "source": "standard"
+  },
+  {
+    "id": "m105",
+    "topic": "ML",
+    "subtopic": "gradient descent",
+    "difficulty": "medium",
+    "question": "A local minimum in a cost function is?",
+    "options": [
+      "always the global minimum",
+      "the lowest point in a region but not necessarily the lowest overall",
+      "never reached by gradient descent",
+      "only a problem in linear models"
+    ],
+    "answer_index": 1,
+    "explanation": "non-convex surfaces have local minima; the global minimum is the lowest across the whole surface.",
+    "source": "standard"
+  },
+  {
+    "id": "m106",
+    "topic": "ML",
+    "subtopic": "regularization",
+    "difficulty": "medium",
+    "question": "L2 (Ridge) regularization penalizes?",
+    "options": [
+      "the absolute value of weights",
+      "the square of weights",
+      "the number of features",
+      "the learning rate"
+    ],
+    "answer_index": 1,
+    "explanation": "L2 adds sum of squared weights to the loss, shrinking them toward zero but not to zero.",
+    "source": "GeeksforGeeks"
+  },
+  {
+    "id": "m107",
+    "topic": "ML",
+    "subtopic": "model evaluation",
+    "difficulty": "easy",
+    "question": "RMSE (Root Mean Squared Error) penalizes large errors more than MAE because?",
+    "options": [
+      "it uses absolute values",
+      "it squares the errors before averaging",
+      "it ignores small errors",
+      "it divides by n-1"
+    ],
+    "answer_index": 1,
+    "explanation": "squaring magnifies large deviations, making RMSE more sensitive to outliers than MAE.",
+    "source": "standard"
+  },
+  {
+    "id": "m108",
+    "topic": "ML",
+    "subtopic": "model evaluation",
+    "difficulty": "medium",
+    "question": "ROC-AUC of 0.5 for a binary classifier means?",
+    "options": [
+      "perfect classifier",
+      "50% accuracy",
+      "no better than random guessing",
+      "recall is 0.5"
+    ],
+    "answer_index": 2,
+    "explanation": "AUC = 0.5 is the diagonal (random) baseline; AUC = 1.0 is perfect.",
+    "source": "standard"
+  },
+  {
+    "id": "m109",
+    "topic": "ML",
+    "subtopic": "model evaluation",
+    "difficulty": "medium",
+    "question": "R-squared (R²) in regression measures?",
+    "options": [
+      "average prediction error",
+      "proportion of variance in y explained by the model",
+      "number of features used",
+      "training loss"
+    ],
+    "answer_index": 1,
+    "explanation": "R² = 1 means the model explains all variance; R² = 0 means it does no better than predicting the mean.",
+    "source": "standard"
+  },
+  {
+    "id": "m110",
+    "topic": "ML",
+    "subtopic": "class imbalance",
+    "difficulty": "medium",
+    "question": "With 95% negative and 5% positive samples, a model that always predicts negative achieves what accuracy?",
+    "options": [
+      "50%",
+      "5%",
+      "95%",
+      "100%"
+    ],
+    "answer_index": 2,
+    "explanation": "a trivial classifier can hit 95% accuracy on imbalanced data; hence accuracy alone is misleading.",
+    "source": "DataCamp"
+  },
+  {
+    "id": "m111",
+    "topic": "ML",
+    "subtopic": "feature engineering",
+    "difficulty": "easy",
+    "question": "Normalization (min-max scaling) rescales features to?",
+    "options": [
+      "mean 0 and std 1",
+      "a range of [0, 1]",
+      "remove outliers",
+      "integer values"
+    ],
+    "answer_index": 1,
+    "explanation": "min-max normalization maps values to [0,1]; standardization gives mean 0 and std 1.",
+    "source": "standard"
+  },
+  {
+    "id": "m112",
+    "topic": "ML",
+    "subtopic": "feature engineering",
+    "difficulty": "easy",
+    "question": "One-hot encoding converts a categorical column into?",
+    "options": [
+      "a single numeric rank column",
+      "binary indicator columns, one per category",
+      "a label-encoded integer",
+      "a frequency count"
+    ],
+    "answer_index": 1,
+    "explanation": "one-hot creates k binary columns for k categories, avoiding an arbitrary ordinal ranking.",
+    "source": "DataCamp"
+  },
+  {
+    "id": "m113",
+    "topic": "ML",
+    "subtopic": "missing data",
+    "difficulty": "easy",
+    "question": "Imputing missing values with the column median is preferred over the mean when?",
+    "options": [
+      "the column has no outliers",
+      "the column is heavily skewed or has outliers",
+      "all values are the same",
+      "the column is binary"
+    ],
+    "answer_index": 1,
+    "explanation": "outliers inflate the mean so the median is a more robust imputation value.",
+    "source": "standard"
+  },
+  {
+    "id": "m114",
+    "topic": "Signal Processing",
+    "subtopic": "sampling",
+    "difficulty": "easy",
+    "question": "The Nyquist-Shannon sampling theorem states you must sample at least __ the highest frequency in the signal.",
+    "options": [
+      "equal to",
+      "half of",
+      "twice",
+      "10 times"
+    ],
+    "answer_index": 2,
+    "explanation": "sampling at < 2× the max frequency causes aliasing and loss of information.",
+    "source": "Wikipedia"
+  },
+  {
+    "id": "m115",
+    "topic": "Signal Processing",
+    "subtopic": "smoothing",
+    "difficulty": "easy",
+    "question": "A moving-average filter is primarily used to?",
+    "options": [
+      "amplify high-frequency noise",
+      "smooth a time series by averaging nearby values",
+      "find the Fourier transform",
+      "detect outliers only"
+    ],
+    "answer_index": 1,
+    "explanation": "a moving average is a simple low-pass filter that reduces noise by local averaging.",
+    "source": "standard"
+  },
+  {
+    "id": "m116",
+    "topic": "Signal Processing",
+    "subtopic": "FFT",
+    "difficulty": "easy",
+    "question": "The Fast Fourier Transform (FFT) converts a signal from?",
+    "options": [
+      "frequency domain to time domain only",
+      "time domain to frequency domain",
+      "integer to float representation",
+      "spatial to spectral and back instantly"
+    ],
+    "answer_index": 1,
+    "explanation": "the FFT decomposes a time-domain signal into its constituent frequencies.",
+    "source": "Wikipedia"
+  },
+  {
+    "id": "m117",
+    "topic": "Data Visualization",
+    "subtopic": "chart types",
+    "difficulty": "easy",
+    "question": "Which chart type is best for showing the distribution of a single continuous variable?",
+    "options": [
+      "line chart",
+      "histogram",
+      "scatter plot",
+      "pie chart"
+    ],
+    "answer_index": 1,
+    "explanation": "a histogram bins values to show their frequency distribution.",
+    "source": "standard"
+  },
+  {
+    "id": "m118",
+    "topic": "Data Visualization",
+    "subtopic": "chart types",
+    "difficulty": "easy",
+    "question": "A scatter plot is most useful for showing?",
+    "options": [
+      "part-to-whole proportions",
+      "distribution shape",
+      "the relationship between two continuous variables",
+      "change over time"
+    ],
+    "answer_index": 2,
+    "explanation": "scatter plots reveal correlation, clusters, and trends between two numeric variables.",
+    "source": "standard"
+  },
+  {
+    "id": "m119",
+    "topic": "Pandas",
+    "subtopic": "groupby",
+    "difficulty": "easy",
+    "question": "df.groupby('category')['value'].mean() does what?",
+    "options": [
+      "filters rows where value equals mean",
+      "computes the mean of 'value' for each unique 'category'",
+      "sorts by category",
+      "drops null values"
+    ],
+    "answer_index": 1,
+    "explanation": "groupby splits data by a key, then an aggregation (mean) is applied to each group.",
+    "source": "DataCamp"
+  },
+  {
+    "id": "m120",
+    "topic": "Pandas",
+    "subtopic": "merge/join",
+    "difficulty": "easy",
+    "question": "pd.merge(df1, df2, on='id', how='inner') returns?",
+    "options": [
+      "all rows from df1",
+      "all rows from df2",
+      "only rows with matching 'id' in both dataframes",
+      "the union of all rows"
+    ],
+    "answer_index": 2,
+    "explanation": "how='inner' keeps only rows where the key exists in both DataFrames.",
+    "source": "DataCamp"
+  },
+  {
+    "id": "m121",
+    "topic": "Pandas",
+    "subtopic": "NaN handling",
+    "difficulty": "easy",
+    "question": "df.dropna() removes rows where?",
+    "options": [
+      "all values are zero",
+      "at least one value is NaN",
+      "the index is duplicated",
+      "a column name is missing"
+    ],
+    "answer_index": 1,
+    "explanation": "dropna() by default removes any row containing at least one missing (NaN) value.",
+    "source": "DataCamp"
+  }
+]
